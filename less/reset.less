@@ -1,0 +1,60 @@
+*,
+*::before,
+*::after{
+  margin: 0;
+  padding: 0;
+  /*移动端常用布局是非固定像素*/
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  tap-highlight-color: transparent;
+  -webkit-tap-highlight-color: transparent;
+}
+body{
+  font-size: 14px;
+  font-family: "Microsoft YaHei",sans-serif;
+  color: #333;
+}
+ol, ul, li {
+  list-style: none;
+}
+
+a {
+  color: #333;
+  text-decoration: none;
+}
+
+input,textarea {
+  resize: none;
+  border: none;
+  outline: none;
+  -webkit-appearance: none;
+}
+.clearFloat {
+  zoom: 1;
+}
+.clearFloat::before,
+.clearFloat::after {
+  content: "";
+  display: block;
+  clear: both;
+  visibility: hidden;
+  height: 0;
+  line-height:0;
+}
+
+.f_l {
+  float: left;
+}
+
+.f_r {
+  float: right;
+}
+.sn_container {
+  position: relative;
+  width: 100%;
+  max-width: 750px;
+  min-width: 320px;
+  margin: 0 auto;
+  padding-top: 90rem/@baseFontSize;
+  padding-bottom: 100rem/@baseFontSize;
+}
